@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="個人履歷與前端作品集，展示專案、技能與學習歷程。">
+  <title>李文皓 | 個人網站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="主要導覽">
+      <a class="brand" href="#home" aria-label="回到首頁"><span class="brand-mark">&lt;/&gt;</span><span>頁首
+      <button class="menu-toggle" id="menuToggle" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">關於我</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">專案</a>
+        <a href="#experience">經歷</a>
+        <a href="#contact" class="nav-cta">聯絡我 <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> 期中個人網頁作業</p>
+        <p class="hero-kicker">您好，我是</p>
+        <h1>李文皓<span class="accent">.</span><br><span class="outline-text">Information Management Student @ NUU</span></h1>
+        <p class="hero-description">一位正在持續學習與實作的資訊管理領域的學生。<br>我喜歡把自身的想法轉換成有用又好看的網頁畫面。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">探索我的作品 <span>↘</span></a>
+          <a class="button button-ghost" href="#contact">與我聯絡 <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-number">01</span><span>持續學習</span></div>
+          <div><span class="meta-number">02</span><span>專案實作</span></div>
+          <div><span class="meta-number">03</span><span>不斷進步</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="程式碼視覺卡片">
+        <div class="visual-glow"></div>
+        <div class="code-card">
+          <div class="code-top"><div class="window-dots"><i></i><i></i><i></i></div><span>about-me.js</span><span class="code-live">● LIVE</span></div>
+          <pre><code><span class="code-purple">const</span> <span class="code-blue">developer</span> = {
+  name: <span class="code-green">"你的名字"</span>,
+  role: <span class="code-green">"Student Developer"</span>,
+  interests: [
+    <span class="code-green">"Frontend"</span>,
+    <span class="code-green">"UI / UX"</span>,
+    <span class="code-green">"Problem Solving"</span>
+  ],
+  learning: <span class="code-orange">true</span>,
+  coffee: <span class="code-orange">"☕"</span>
+};
+
+<span class="code-purple">function</span> <span class="code-blue">buildSomething</span>() {
+  <span class="code-purple">return</span> <span class="code-green">"Keep creating."</span>;
+}</code></pre>
+          <div class="code-footer"><span><span class="status-dot"></span> Always learning</span><span>UTF-8</span></div>
+        </div>
+        <div class="float-chip chip-one"><span>✦</span> Creative mindset</div>
+        <div class="float-chip chip-two"><span>⌘</span> Build & learn</div>
+        <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> 介紹開始!</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="section-index">01 / ABOUT</p><h2>關於<span class="accent">我</span></h2><p>不只學習技術，也學習如何用技術解決問題。</p></div>
+      <div class="about-grid">
+        <article class="about-card glass-card reveal">
+          <div class="card-icon">✳</div><h3>持續探索</h3>
+          <p>我對架設網站有興趣，喜歡從需求出發，逐步拆解問題，再把想法實際做出來。</p>
+        </article>
+        <article class="about-card glass-card reveal">
+          <div class="card-icon">⌘</div><h3>從專案中學習</h3>
+          <p>透過專題與課堂團隊合作，練習需求分析、功能規劃、資料整理與系統實作，累積解決真實問題的經驗。</p>
+        </article>
+        <article class="about-card glass-card reveal">
+          <div class="card-icon">↗</div><h3>一步步成長</h3>
+          <p>目前正持續強化學習 HTML、CSS、PHP、MySQL資料庫，希望打造實用、易用且具備良好視覺設計的網站。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="section-index">02 / TOOLKIT</p><h2>技能與<span class="accent">工具</span></h2><p>以下是依照實際熟悉程度持續更新的技能清單。</p></div>
+      <div class="skills-layout">
+        <div class="skills-panel glass-card reveal">
+          <div class="panel-title"><span class="panel-dot"></span> 程式語言軟體</div>
+          <div class="skill-row"><div class="skill-label"><span>Python</span><span>學習中</span></div><div class="skill-track"><span style="--level:80%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>CSS3</span><span>學習中</span></div><div class="skill-track"><span style="--level:70%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>PHP</span><span>學習中</span></div><div class="skill-track"><span style="--level:60%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>MySQL</span><span>學習中</span></div><div class="skill-track"><span style="--level:65%"></span></div></div>
+        </div>
+        <div class="tool-cloud reveal">
+          <div class="tool-tag"><span>◈</span> C#</div><div class="tool-tag"><span>◈</span> R語言</div>
+          <div class="tool-tag"><span>◈</span> C++</div><div class="tool-tag"><span>◈</span> GitHub</div>
+          <p class="tool-caption">未來學習或探索</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="section-index">03 / SELECTED WORK</p><h2>精選<span class="accent">專案</span></h2><p>用實作記錄成長，每個專案都代表一次新的挑戰。</p></div>
+      <div class="project-grid">
+        <article class="project-card glass-card reveal">
+          <div class="project-art rental-art"><span class="art-label">01 — WEB SYSTEM</span><div class="art-window"><div class="art-window-top"><i></i><i></i><i></i></div><div class="art-map"><span>⌖</span><span>⌖</span><span>⌖</span><span>⌖</span><div class="map-road road-one"></div><div class="map-road road-two"></div></div><div class="art-lines"><i></i><i></i><i></i></div></div></div>
+          <div class="project-content"><div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML / CSS</span></div><h3>校園共享租屋系統</h3><p>以學生租屋需求為出發點，整合房源資訊、心得評價與租屋相關功能，讓租屋資訊更容易比較與查找。</p><div class="project-bottom"><span class="project-type">我的專題</span><a href="#contact" class="text-link" aria-label="詢問校園共享租屋系統"></a></div></div>
+        </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-art skill-art"><span class="art-label">02 — COMMUNITY</span><div class="skill-art-center"><span class="skill-symbol">✳</span><span>SKILL<br>BANK</span><div class="skill-ring ring-one"></div><div class="skill-ring ring-two"></div></div><span class="floating-word word-a">SHARE</span><span class="floating-word word-b">LEARN</span><span class="floating-word word-c">GROW</span></div>
+          <div class="project-content"><div class="project-tags"><span>企劃</span><span>地方創生</span><span>永續</span></div><h3>客庄技能銀行</h3><p>以客家傳統技藝傳承為核心，規劃師傅與青年交流學習的方式，讓地方知識有機會延續與再創造。</p><div class="project-bottom"><span class="project-type">競賽企劃</span><a href="#contact" class="text-link" aria-label="詢問客庄技能銀行"></a></div></div>
+        </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-art portfolio-art"><span class="art-label">03 — PERSONAL</span><div class="portfolio-mini"><span class="mini-bracket">&lt;/&gt;</span><div class="mini-line long"></div><div class="mini-line medium"></div><div class="mini-line short"></div><div class="mini-pills"><i></i><i></i><i></i></div></div><span class="portfolio-orbit"></span></div>
+          <div class="project-content"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>個人履歷網站</h3><p>從零開始規劃並製作個人作品集，練習響應式網頁、互動設計、網站部署。</p><div class="project-bottom"><span class="project-type">個人專案</span><a href="#home" class="text-link">目前所在頁面 ↗</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-heading reveal"><p class="section-index">04 / JOURNEY</p><h2>學習<span class="accent">歷程</span></h2><p>用時間軸整理學習、專題與活動經驗。</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">PROJECT / COURSE</div><div class="timeline-content glass-card"><h3>校園共享租屋系統</h3><p>參與校園共享系統規劃與實作，接觸 PHP、MySQL 與網站功能整合。</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">HACKATHON / PLANNING</div><div class="timeline-content glass-card"><h3>客庄技能銀行企劃</h3><p>參與地方文化與技藝傳承相關企劃，練習團隊溝通、問題定義與提案表達。</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">NOW / LEARNING</div><div class="timeline-content glass-card"><h3>前端開發與個人網站</h3><p>持續學習 HTML、CSS、PHP、MySQL，並將作品整理成可公開瀏覽的個人網站。</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-spark spark-one">✳</div><div class="contact-spark spark-two">+</div>
+        <p class="section-index">05 / GET IN TOUCH</p><h2>這是我的<span class="accent">聯絡方式</span>。</h2><p class="contact-copy">歡迎與我聯絡</p>
+        <a class="button button-primary" href="alone94666@gmail.com">寄信給我 <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>開頭<span class="accent">回到頁面頂端</span>
+  <button id="backToTop" class="back-to-top" aria-label="回到頁面頂端">↑</button>
+</body>
+</html>
